@@ -1,7 +1,7 @@
 $ accesssutra install-ide --target <tmp>\proj --host cursor --dry-run
 {
   "host": "cursor",
-  "destination": "C:\\Users\\VATSAL~1\\AppData\\Local\\Temp\\accesssutra-proof-pgDZG9\\proj\\accesssutra",
+  "destination": "C:\\Users\\VATSAL~1\\AppData\\Local\\Temp\\accesssutra-proof-HVgx6B\\proj\\accesssutra",
   "dryRun": true,
   "wouldCopy": [
     "skills",

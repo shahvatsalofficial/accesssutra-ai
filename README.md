@@ -37,14 +37,14 @@ Open `accesssutra-demo/assessment.html`. Sample outputs are committed in [`examp
 | Hash-chained local audit ledger | Implemented, tested | `accesssutra audit append|verify` |
 | IDE instruction packs (9 hosts), `install-ide --dry-run` | Implemented; native activation per host **not verified** | [`docs/IDE_COMPATIBILITY.md`](docs/IDE_COMPATIBILITY.md) |
 
-## Proof, not promises (recorded run, v0.2.0, Node 24, Windows 11)
+## Proof, not promises (recorded run, v0.2.1, Node 24, Windows 11)
 
 | Measure | Result | Where |
 |---|---|---|
 | Automated tests | 74 run, 73 passed, 0 failed, 1 skipped (symlink test needs privilege on Windows) | [`docs/proof/test-run.tap`](docs/proof/test-run.tap) |
 | Assurance checks | 21 total, 20 passed, 0 failed, 1 skipped | [`docs/proof/assurance-sample`](docs/proof/assurance-sample) |
 | Gold corpus (56 hand-labelled HTML cases) | precision 100%, recall 100% — **self-authored labels, not an independent benchmark** | [`docs/proof/benchmark.json`](docs/proof/benchmark.json) |
-| Fuzzing (2,213 hostile inputs, fixed seed) | 0 unexpected exceptions, slowest 776 ms | [`docs/proof/fuzz-results.json`](docs/proof/fuzz-results.json) |
+| Fuzzing (2,213 hostile inputs, fixed seed) | 0 unexpected exceptions, slowest 253 ms | [`docs/proof/fuzz-results.json`](docs/proof/fuzz-results.json) |
 | Real browser cross-check (Chromium 131 + axe-core 4.10) | axe flagged `button-name` and `image-alt` on the broken fixture and nothing on the good one; the static scanner flagged the same two plus a placeholder-only field that axe accepts | [`docs/proof/axe-crosscheck.json`](docs/proof/axe-crosscheck.json) |
 | Runtime dependencies | 0 | `package.json` |
 

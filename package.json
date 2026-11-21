@@ -1,6 +1,6 @@
 {
   "name": "accesssutra-ai",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "type": "module",
   "description": "AccessSutra AI: local-first, evidence-based accessibility task testing. Zero-dependency static HTML scanner (18 rules), human manual-test plans, sealed JSON/Markdown/HTML reports, assurance audit, optional Playwright + axe-core adapter, 21 agent roles and 26 portable skills. Not a WCAG certification tool.",

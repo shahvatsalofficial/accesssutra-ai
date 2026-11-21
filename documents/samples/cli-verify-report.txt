@@ -1,4 +1,4 @@
 $ accesssutra verify --report <tmp>\report\assessment.json
-{"valid":true,"sha256":"e154ea0a55d6c7f470c204c7acf43d6a240bb2932042d0c251be0486f0385edc","note":"Seal detects edits; it is not a digital signature."}
+{"valid":true,"sha256":"d38b79d3515f66aae730b721de76e915775a4ff0a0fd3586aa0f9a8f3e17c5f4","note":"Seal detects edits; it is not a digital signature."}
 
 [exit 0]

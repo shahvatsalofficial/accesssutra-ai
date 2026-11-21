@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-11-22
+
+- Release via npm trusted publishing (OIDC, provenance). No scanner behavior change.
+- CI real-browser job now uses current Playwright 1.65.1 and @axe-core/playwright 4.14.0 (recorded proof in docs/proof was made with 1.49.1 and says so).
+- Regenerated proof, examples and documents for 0.2.1.
+
 ## 0.2.0 — 2026-11-22
 
 Added

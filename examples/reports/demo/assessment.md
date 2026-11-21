@@ -1,6 +1,6 @@
 # AccessSutra AI — Scoped Accessibility Evidence
 
-Source: signup-broken.html · SHA-256: `c015642297fabb98e69db5f895f4ef2b14251f673d991bb8d83b9fb288ee16f8` · Tool 0.2.0
+Source: signup-broken.html · SHA-256: `c015642297fabb98e69db5f895f4ef2b14251f673d991bb8d83b9fb288ee16f8` · Tool 0.2.1
 
 Limited findings: **5** (3 detected, 2 requiring review). Serious: 3, moderate: 2, minor: 0, critical: 0.
 
@@ -71,4 +71,4 @@ Status: not-run
 - No pass score or WCAG conformance claim
 
 ## Integrity
-Seal (SHA-256 of canonical JSON): `e154ea0a55d6c7f470c204c7acf43d6a240bb2932042d0c251be0486f0385edc`. Detects edits; not a digital signature.
+Seal (SHA-256 of canonical JSON): `d38b79d3515f66aae730b721de76e915775a4ff0a0fd3586aa0f9a8f3e17c5f4`. Detects edits; not a digital signature.

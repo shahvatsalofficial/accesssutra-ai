@@ -1,6 +1,6 @@
 $ accesssutra doctor
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "node": "v24.15.0",
   "platform": "win32",
   "core": "offline/no runtime dependencies",

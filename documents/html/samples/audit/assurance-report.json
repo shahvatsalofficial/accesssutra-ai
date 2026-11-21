@@ -1,9 +1,9 @@
 {
   "schema": "accesssutra.assurance/1",
   "product": "AccessSutra AI",
-  "toolVersion": "0.2.0",
+  "toolVersion": "0.2.1",
   "rulesVersion": "2.0.0",
-  "generatedAt": "2026-11-21T19:42:56.780Z",
+  "generatedAt": "2026-11-21T20:13:16.335Z",
   "environment": {
     "node": "v24.15.0",
     "platform": "win32/x64",
@@ -163,7 +163,7 @@
       "area": "robustness",
       "title": "Fuzzing: slowest input under 5 s",
       "status": "pass",
-      "evidence": "max 670 ms"
+      "evidence": "max 250 ms"
     }
   ],
   "benchmark": {
@@ -331,7 +331,7 @@
     "returned": 2211,
     "limitErrors": 2,
     "unexpected": 0,
-    "maxMs": 670,
+    "maxMs": 250,
     "notes": []
   },
   "limitations": [
@@ -343,7 +343,7 @@
   ],
   "seal": {
     "algorithm": "sha256-canonical-json",
-    "sha256": "e6712f13c116c9342f4ee5ed994d8fcd2c25bdd16a22a2a6fb7a4597f652fd09",
+    "sha256": "04aeb9900c0ae4d2cc1de90a2555450f859a25b3d580b5f1875da7bead5c33de",
     "note": "Detects edits; not a digital signature."
   }
 }

@@ -1,6 +1,6 @@
 # Executive summary
 
-AccessSutra AI is a local-first command-line tool and agent kit that helps teams **test accessibility tasks with evidence**, not just run a scanner. Version 0.2.0.
+AccessSutra AI is a local-first command-line tool and agent kit that helps teams **test accessibility tasks with evidence**, not just run a scanner. Version 0.2.1.
 
 ## The problem
 
@@ -24,7 +24,7 @@ Automated scanners find only a minority of accessibility barriers, and a green s
 | Fuzzing | 2213 hostile inputs, 0 unexpected exceptions |
 | Runtime dependencies | 0 |
 
-Recorded 2026-11-21T19:42:56.798Z on Node v24.15.0, win32/x64. All raw artifacts are linked from the documentation index.
+Recorded 2026-11-21T20:13:16.345Z on Node v24.15.0, win32/x64. All raw artifacts are linked from the documentation index.
 
 ## What it is not
 

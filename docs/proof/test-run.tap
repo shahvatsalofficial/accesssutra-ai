@@ -2,419 +2,419 @@ TAP version 13
 # Subtest: browser adapter rejects external URL before importing anything
 ok 1 - browser adapter rejects external URL before importing anything
   ---
-  duration_ms: 3.3276
+  duration_ms: 1.6126
   type: 'test'
   ...
 # Subtest: browser adapter rejects bad tab counts
 ok 2 - browser adapter rejects bad tab counts
   ---
-  duration_ms: 0.9401
+  duration_ms: 0.2554
   type: 'test'
   ...
 # Subtest: real Chromium + axe-core run on the broken fixture agrees with the static scanner
 ok 3 - real Chromium + axe-core run on the broken fixture agrees with the static scanner
   ---
-  duration_ms: 17416.7485
+  duration_ms: 28126.4398
   type: 'test'
   ...
 # Subtest: real Chromium + axe-core run on the good fixture finds no axe violations
 ok 4 - real Chromium + axe-core run on the good fixture finds no axe violations
   ---
-  duration_ms: 15732.2577
+  duration_ms: 21555.738
   type: 'test'
   ...
 # Subtest: all nine host adapter names present
 ok 5 - all nine host adapter names present
   ---
-  duration_ms: 2.8069
+  duration_ms: 0.5493
   type: 'test'
   ...
 # Limited scan: 5 findings (2 human-review); no conformance claim
 # Manual plan: 10 checks; not-tested
-# Wrote JSON, Markdown and HTML to C:\\Users\\VATSAL~1\\AppData\\Local\\Temp\\as-cli-6PoBdi\\report
+# Wrote JSON, Markdown and HTML to C:\\Users\\VATSAL~1\\AppData\\Local\\Temp\\as-cli-M5E9D3\\report
 # Subtest: CLI scan/manual/report create usable outputs
 ok 6 - CLI scan/manual/report create usable outputs
   ---
-  duration_ms: 91.6982
+  duration_ms: 35.1122
   type: 'test'
   ...
 # Subtest: CLI refuses unknown command
 ok 7 - CLI refuses unknown command
   ---
-  duration_ms: 2.0671
+  duration_ms: 0.717
   type: 'test'
   ...
 # Subtest: CLI refuses missing input
 ok 8 - CLI refuses missing input
   ---
-  duration_ms: 0.7378
+  duration_ms: 0.1956
   type: 'test'
   ...
 # Subtest: installer copies only into project-local target
 ok 9 - installer copies only into project-local target
   ---
-  duration_ms: 1285.2352
+  duration_ms: 592.4068
   type: 'test'
   ...
 # Subtest: installer rejects unsupported host
 ok 10 - installer rejects unsupported host
   ---
-  duration_ms: 0.9239
+  duration_ms: 0.4259
   type: 'test'
   ...
 # Subtest: installer refuses installing inside source repository
 ok 11 - installer refuses installing inside source repository
   ---
-  duration_ms: 0.5446
+  duration_ms: 0.2582
   type: 'test'
   ...
 # Subtest: HTML parser recognizes nested controls and labels
 ok 12 - HTML parser recognizes nested controls and labels
   ---
-  duration_ms: 5.3206
+  duration_ms: 1.3961
   type: 'test'
   ...
 # Subtest: HTML parser honors > inside quoted attributes
 ok 13 - HTML parser honors > inside quoted attributes
   ---
-  duration_ms: 0.593
+  duration_ms: 0.2292
   type: 'test'
   ...
 # Subtest: HTML parser skips comments and script-like tags
 ok 14 - HTML parser skips comments and script-like tags
   ---
-  duration_ms: 0.6619
+  duration_ms: 0.2593
   type: 'test'
   ...
 # Subtest: unlabeled input detected with rule and source
 ok 15 - unlabeled input detected with rule and source
   ---
-  duration_ms: 0.286
+  duration_ms: 0.1581
   type: 'test'
   ...
 # Subtest: invalid input missing error association needs human review
 ok 16 - invalid input missing error association needs human review
   ---
-  duration_ms: 0.3077
+  duration_ms: 0.1526
   type: 'test'
   ...
 # Subtest: missing alt detected
 ok 17 - missing alt detected
   ---
-  duration_ms: 0.1793
+  duration_ms: 0.2497
   type: 'test'
   ...
 # Subtest: nameless button detected
 ok 18 - nameless button detected
   ---
-  duration_ms: 0.3972
+  duration_ms: 0.1514
   type: 'test'
   ...
 # Subtest: clickable div flagged for review
 ok 19 - clickable div flagged for review
   ---
-  duration_ms: 0.2365
+  duration_ms: 0.0687
   type: 'test'
   ...
 # Subtest: good fixture has no static findings
 ok 20 - good fixture has no static findings
   ---
-  duration_ms: 1.4779
+  duration_ms: 0.3512
   type: 'test'
   ...
 # Subtest: no findings never implies conformance
 ok 21 - no findings never implies conformance
   ---
-  duration_ms: 1.6446
+  duration_ms: 0.3046
   type: 'test'
   ...
 # Subtest: deterministic stable IDs and source hash
 ok 22 - deterministic stable IDs and source hash
   ---
-  duration_ms: 4.7206
+  duration_ms: 1.0982
   type: 'test'
   ...
 # Subtest: different source hash changes
 ok 23 - different source hash changes
   ---
-  duration_ms: 1.8673
+  duration_ms: 0.4275
   type: 'test'
   ...
 # Subtest: document missing lang and title
 ok 24 - document missing lang and title
   ---
-  duration_ms: 23.7067
+  duration_ms: 10.0857
   type: 'test'
   ...
 # Subtest: duplicate IDs
 ok 25 - duplicate IDs
   ---
-  duration_ms: 0.4873
+  duration_ms: 0.4636
   type: 'test'
   ...
 # Subtest: ARIA unresolved ID
 ok 26 - ARIA unresolved ID
   ---
-  duration_ms: 0.4393
+  duration_ms: 0.2124
   type: 'test'
   ...
 # Subtest: explicit associated label
 ok 27 - explicit associated label
   ---
-  duration_ms: 0.259
+  duration_ms: 0.1028
   type: 'test'
   ...
 # Subtest: implicit wrapping label
 ok 28 - implicit wrapping label
   ---
-  duration_ms: 0.3755
+  duration_ms: 0.1923
   type: 'test'
   ...
 # Subtest: hidden inputs excluded
 ok 29 - hidden inputs excluded
   ---
-  duration_ms: 0.1966
+  duration_ms: 0.1638
   type: 'test'
   ...
 # Subtest: decorative image empty alt accepted
 ok 30 - decorative image empty alt accepted
   ---
-  duration_ms: 0.3842
+  duration_ms: 0.0999
   type: 'test'
   ...
 # Subtest: positive tabindex review
 ok 31 - positive tabindex review
   ---
-  duration_ms: 0.4853
+  duration_ms: 0.1527
   type: 'test'
   ...
 # Subtest: HTML size limit
 ok 32 - HTML size limit
   ---
-  duration_ms: 4.6545
+  duration_ms: 1.988
   type: 'test'
   ...
 # Subtest: HTML nesting limit
 ok 33 - HTML nesting limit
   ---
-  duration_ms: 1.4627
+  duration_ms: 0.5271
   type: 'test'
   ...
 # Subtest: manual task includes ten untested checks
 ok 34 - manual task includes ten untested checks
   ---
-  duration_ms: 1.0647
+  duration_ms: 0.4524
   type: 'test'
   ...
 # Subtest: manual plan rejects invalid task
 ok 35 - manual plan rejects invalid task
   ---
-  duration_ms: 0.4451
+  duration_ms: 0.1594
   type: 'test'
   ...
 # Subtest: manual observation requires attribution
 ok 36 - manual observation requires attribution
   ---
-  duration_ms: 1.3871
+  duration_ms: 0.5415
   type: 'test'
   ...
 # Subtest: manual observation records a blocked trap as human-provided
 ok 37 - manual observation records a blocked trap as human-provided
   ---
-  duration_ms: 2.1103
+  duration_ms: 0.7164
   type: 'test'
   ...
 # Subtest: manual observation rejects duplicates
 ok 38 - manual observation rejects duplicates
   ---
-  duration_ms: 0.8668
+  duration_ms: 0.2381
   type: 'test'
   ...
 # Subtest: manual observation rejects unknown checks
 ok 39 - manual observation rejects unknown checks
   ---
-  duration_ms: 0.6115
+  duration_ms: 0.175
   type: 'test'
   ...
 # Subtest: manual observation rejects credential-like notes
 ok 40 - manual observation rejects credential-like notes
   ---
-  duration_ms: 0.5793
+  duration_ms: 0.1969
   type: 'test'
   ...
 # Subtest: manual observation rejects long notes
 ok 41 - manual observation rejects long notes
   ---
-  duration_ms: 0.6859
+  duration_ms: 0.3338
   type: 'test'
   ...
 # Subtest: report composes manual not-run correctly
 ok 42 - report composes manual not-run correctly
   ---
-  duration_ms: 1.7314
+  duration_ms: 0.3685
   type: 'test'
   ...
 # Subtest: report JSON serializes
 ok 43 - report JSON serializes
   ---
-  duration_ms: 1.3898
+  duration_ms: 0.5328
   type: 'test'
   ...
 # Subtest: markdown includes limitations and evidence
 ok 44 - markdown includes limitations and evidence
   ---
-  duration_ms: 1.9577
+  duration_ms: 1.8383
   type: 'test'
   ...
 # Subtest: HTML report escapes malicious source content
 ok 45 - HTML report escapes malicious source content
   ---
-  duration_ms: 1.8972
+  duration_ms: 0.9612
   type: 'test'
   ...
 # Subtest: Markdown report escapes user-supplied source HTML
 ok 46 - Markdown report escapes user-supplied source HTML
   ---
-  duration_ms: 0.8754
+  duration_ms: 0.515
   type: 'test'
   ...
 # Subtest: HTML report has semantic table and viewport
 ok 47 - HTML report has semantic table and viewport
   ---
-  duration_ms: 1.1103
+  duration_ms: 0.5266
   type: 'test'
   ...
 # Subtest: scan does not expose input values
 ok 48 - scan does not expose input values
   ---
-  duration_ms: 0.6171
+  duration_ms: 0.2121
   type: 'test'
   ...
 # Subtest: scan refuses symlinks
 ok 49 - scan refuses symlinks # SKIP no symlink privilege on this host
   ---
-  duration_ms: 57.9605
+  duration_ms: 23.6877
   type: 'test'
   ...
 # Subtest: scan refuses oversized input file
 ok 50 - scan refuses oversized input file
   ---
-  duration_ms: 79.6211
+  duration_ms: 53.8189
   type: 'test'
   ...
 # Subtest: audit chain verifies
 ok 51 - audit chain verifies
   ---
-  duration_ms: 26.091
+  duration_ms: 11.0791
   type: 'test'
   ...
 # Subtest: audit tamper is detected
 ok 52 - audit tamper is detected
   ---
-  duration_ms: 15.569
+  duration_ms: 7.9255
   type: 'test'
   ...
 # Subtest: audit malformed JSON detected
 ok 53 - audit malformed JSON detected
   ---
-  duration_ms: 0.6488
+  duration_ms: 0.4156
   type: 'test'
   ...
 # Subtest: browser URL allowlist blocks external origins
 ok 54 - browser URL allowlist blocks external origins
   ---
-  duration_ms: 0.6541
+  duration_ms: 0.2716
   type: 'test'
   ...
 # Subtest: browser URL allowlist blocks invalid and unsafe schemes
 ok 55 - browser URL allowlist blocks invalid and unsafe schemes
   ---
-  duration_ms: 0.6372
+  duration_ms: 0.1919
   type: 'test'
   ...
 # Subtest: disclaimer explicit
 ok 56 - disclaimer explicit
   ---
-  duration_ms: 0.4162
+  duration_ms: 0.1828
   type: 'test'
   ...
 # Subtest: select options do not name a select
 ok 57 - select options do not name a select
   ---
-  duration_ms: 10.9234
+  duration_ms: 4.2117
   type: 'test'
   ...
 # Subtest: image alt inside button counts as a name
 ok 58 - image alt inside button counts as a name
   ---
-  duration_ms: 2.2503
+  duration_ms: 0.8845
   type: 'test'
   ...
 # Subtest: 300 unclosed <li> do not hit the nesting limit
 ok 59 - 300 unclosed <li> do not hit the nesting limit
   ---
-  duration_ms: 5.8427
+  duration_ms: 2.6563
   type: 'test'
   ...
 # Subtest: unclosed <script> swallows the rest like a browser
 ok 60 - unclosed <script> swallows the rest like a browser
   ---
-  duration_ms: 0.9569
+  duration_ms: 0.366
   type: 'test'
   ...
 # Subtest: title text is captured
 ok 61 - title text is captured
   ---
-  duration_ms: 0.6654
+  duration_ms: 0.394
   type: 'test'
   ...
 # Subtest: stray quote in unquoted attribute does not swallow the page
 ok 62 - stray quote in unquoted attribute does not swallow the page
   ---
-  duration_ms: 0.5008
+  duration_ms: 0.3142
   type: 'test'
   ...
 # Subtest: selector nth-of-type is stable and fast on 20000 siblings
 ok 63 - selector nth-of-type is stable and fast on 20000 siblings
   ---
-  duration_ms: 592.2738
+  duration_ms: 159.5696
   type: 'test'
   ...
 # Subtest: duplicate ARIA refs do not create duplicate finding ids
 ok 64 - duplicate ARIA refs do not create duplicate finding ids
   ---
-  duration_ms: 2.0601
+  duration_ms: 0.5463
   type: 'test'
   ...
 # Subtest: gold corpus has zero false positives and negatives
 ok 65 - gold corpus has zero false positives and negatives
   ---
-  duration_ms: 14.1593
+  duration_ms: 3.1983
   type: 'test'
   ...
 # Subtest: fuzzing finds no unexpected exception
 ok 66 - fuzzing finds no unexpected exception
   ---
-  duration_ms: 1559.0889
+  duration_ms: 540.9514
   type: 'test'
   ...
 # Subtest: report seal verifies and rejects tampering
 ok 67 - report seal verifies and rejects tampering
   ---
-  duration_ms: 0.978
+  duration_ms: 0.5104
   type: 'test'
   ...
-# {"valid":true,"sha256":"c8786c880a3b945e5c24f3f41caecfec85b223bd0cd288fb51a7213bc34b4102","note":"Seal detects edits; it is not a digital signature."}
+# {"valid":true,"sha256":"817bc866c3d18891355ad6a128966b379292679ddc41a0fe117cf0d80ed4c985","note":"Seal detects edits; it is not a digital signature."}
 # Subtest: assurance run passes end to end and CLI verify accepts its seal
 ok 68 - assurance run passes end to end and CLI verify accepts its seal
   ---
-  duration_ms: 5760.6912
+  duration_ms: 2335.6086
   type: 'test'
   ...
 # Limited scan: 5 findings (2 human-review); no conformance claim
 # Gate failed: finding(s) at serious or above
 # Limited scan: 0 findings (0 human-review); no conformance claim
-# 0.2.0
+# 0.2.1
 # AS-DOC-001  moderate WCAG 2.4.2  Page title is missing
 # AS-DOC-002  moderate WCAG 3.1.1  Document language is missing
 # AS-DOC-003  moderate WCAG 3.1.1  Document language code looks malformed
@@ -436,37 +436,37 @@ ok 68 - assurance run passes end to end and CLI verify accepts its seal
 # Subtest: CLI --fail-on gates on severity
 ok 69 - CLI --fail-on gates on severity
   ---
-  duration_ms: 40.7951
+  duration_ms: 11.198
   type: 'test'
   ...
 # Subtest: CLI version and rules
 ok 70 - CLI version and rules
   ---
-  duration_ms: 0.9851
+  duration_ms: 0.7718
   type: 'test'
   ...
 # Subtest: server requires strong token
 ok 71 - server requires strong token
   ---
-  duration_ms: 3.9887
+  duration_ms: 0.9785
   type: 'test'
   ...
 # Subtest: server requires report directory
 ok 72 - server requires report directory
   ---
-  duration_ms: 0.445
+  duration_ms: 0.1155
   type: 'test'
   ...
 # Subtest: read-only localhost server rejects unauthenticated and mutating requests
 ok 73 - read-only localhost server rejects unauthenticated and mutating requests
   ---
-  duration_ms: 195.6588
+  duration_ms: 60.9854
   type: 'test'
   ...
 # Subtest: server rate limit is enforced
 ok 74 - server rate limit is enforced
   ---
-  duration_ms: 34.1731
+  duration_ms: 14.7478
   type: 'test'
   ...
 1..74
@@ -477,4 +477,4 @@ ok 74 - server rate limit is enforced
 # cancelled 0
 # skipped 1
 # todo 0
-# duration_ms 43995.8327
+# duration_ms 65246.1477

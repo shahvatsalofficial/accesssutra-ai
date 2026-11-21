@@ -4,13 +4,13 @@
 
 > Automated self-assurance run by the tool on its own code. It is NOT a third-party audit, WCAG conformance assessment, or legal opinion.
 
-Tool 0.2.0 · rules 2.0.0 · 2026-11-21T19:42:56.780Z · Node v24.15.0 · win32/x64
+Tool 0.2.1 · rules 2.0.0 · 2026-11-21T20:13:16.335Z · Node v24.15.0 · win32/x64
 
 ## Summary
 
 - Checks: **21** — 20 passed, 0 failed, 1 skipped
 - Gold corpus: 56 cases, exact match 56/56, precision 100.0%, recall 100.0% (self-authored by the maintainer; not an independent benchmark)
-- Fuzzing: 2213 hostile inputs (seed 20261122), 0 unexpected exceptions, slowest 670 ms
+- Fuzzing: 2213 hostile inputs (seed 20261122), 0 unexpected exceptions, slowest 250 ms
 
 ## Checks
 
@@ -36,7 +36,7 @@ Tool 0.2.0 · rules 2.0.0 · 2026-11-21T19:42:56.780Z · Node v24.15.0 · win32/
 | AS-B02 | accuracy | Gold corpus: every labelled defect found | **pass** | fn=0 |
 | AS-B03 | accuracy | Gold corpus: exact-match rate 100% | **pass** | 56/56 |
 | AS-F01 | robustness | Fuzzing: no unexpected exception or invalid output | **pass** | 2213 inputs, 2211 scanned, 2 documented-limit refusals, 0 unexpected |
-| AS-F02 | robustness | Fuzzing: slowest input under 5 s | **pass** | max 670 ms |
+| AS-F02 | robustness | Fuzzing: slowest input under 5 s | **pass** | max 250 ms |
 
 ## Per-rule accuracy on the gold corpus
 
@@ -71,4 +71,4 @@ Tool 0.2.0 · rules 2.0.0 · 2026-11-21T19:42:56.780Z · Node v24.15.0 · win32/
 
 ## Integrity
 
-Seal SHA-256 (canonical JSON): `e6712f13c116c9342f4ee5ed994d8fcd2c25bdd16a22a2a6fb7a4597f652fd09`. Verify with `accesssutra verify --report assurance-report.json`. Detects edits; not a digital signature.
+Seal SHA-256 (canonical JSON): `04aeb9900c0ae4d2cc1de90a2555450f859a25b3d580b5f1875da7bead5c33de`. Verify with `accesssutra verify --report assurance-report.json`. Detects edits; not a digital signature.

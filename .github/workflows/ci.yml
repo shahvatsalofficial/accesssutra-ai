@@ -54,7 +54,7 @@ jobs:
           node-version: '24'
       - name: Install optional browser dependencies (not saved to package.json)
         run: |
-          npm install --no-save --no-package-lock playwright@1.49.1 @axe-core/playwright@4.10.0
+          npm install --no-save --no-package-lock playwright@1.65.1 @axe-core/playwright@4.14.0
           npx playwright install --with-deps chromium
       - name: Browser tests must run, not skip
         run: node --test --test-reporter=tap tests/browser.test.mjs | tee browser.tap && grep -q "^# skipped 0" browser.tap && grep -q "^# fail 0" browser.tap

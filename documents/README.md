@@ -1,6 +1,6 @@
 # AccessSutra AI — documents
 
-Complete documentation set for **AccessSutra AI 0.2.0** (executive, functional, architecture, technical, user guide, security, rules, test report, operations, legal, roadmap and FAQ, glossary).
+Complete documentation set for **AccessSutra AI 0.2.1** (executive, functional, architecture, technical, user guide, security, rules, test report, operations, legal, roadmap and FAQ, glossary).
 
 - Start: `html/index.html` (open in a browser; self-contained, responsive, light/dark, printable)
 - Markdown sources: `md/` (with placeholders) and `md-rendered/` (numbers filled from the recorded run)

@@ -1,6 +1,6 @@
 {
   "name": "accesssutra-ai",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Portable AccessSutra AI agent and skill instructions; compatibility not yet validated",
   "author": {
     "name": "Vatsal Shah"
