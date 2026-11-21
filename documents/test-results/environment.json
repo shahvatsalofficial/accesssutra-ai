@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "node": "v24.15.0",
+  "platform": "win32/x64",
+  "os": "Windows_NT 10.0.26300",
+  "recordedAt": "2026-11-21T19:42:56.798Z",
+  "tests": 74,
+  "pass": 73,
+  "fail": 0,
+  "skipped": 1,
+  "assuranceChecks": 21,
+  "assurancePassed": 20,
+  "assuranceFailed": 0,
+  "assuranceSkipped": 1,
+  "verdict": "ASSURANCE_CHECKS_PASSED_HUMAN_REVIEW_STILL_REQUIRED",
+  "corpusCases": 56,
+  "precision": 1,
+  "recall": 1,
+  "fuzzInputs": 2213,
+  "fuzzUnexpected": 0,
+  "fuzzMaxMs": 776,
+  "rules": 18
+}

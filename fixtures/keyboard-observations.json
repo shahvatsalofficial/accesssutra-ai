@@ -1,0 +1,4 @@
+[
+  {"id":"keyboard-navigation","status":"passed","reviewer":"Synthetic fixture reviewer","environment":"Illustrative keyboard test notes only; not executed in browser","observation":"Example only: reviewer reports a logical sequence; replace with real observations."},
+  {"id":"keyboard-trap","status":"blocked","reviewer":"Synthetic fixture reviewer","environment":"Illustrative keyboard test notes only; not executed in browser","observation":"Example only: focus could not leave a test modal; requires real reproduction."}
+]

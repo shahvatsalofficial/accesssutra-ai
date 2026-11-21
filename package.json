@@ -1,0 +1,27 @@
+{
+  "name": "accesssutra-ai",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "AccessSutra AI: local-first, evidence-based accessibility task testing. Zero-dependency static HTML scanner (18 rules), human manual-test plans, sealed JSON/Markdown/HTML reports, assurance audit, optional Playwright + axe-core adapter, 21 agent roles and 26 portable skills. Not a WCAG certification tool.",
+  "author": { "name": "Vatsal Shah", "url": "https://github.com/shahvatsalofficial" },
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" },
+  "bin": { "accesssutra": "packages/cli/accesssutra.mjs", "accesssutra-ai": "packages/cli/accesssutra.mjs" },
+  "scripts": {
+    "test": "node scripts/run-tests.mjs",
+    "doctor": "node packages/cli/accesssutra.mjs doctor",
+    "demo": "node packages/cli/accesssutra.mjs demo --out examples/reports/demo",
+    "audit": "node packages/cli/accesssutra.mjs audit --out examples/audit",
+    "proof": "node scripts/proof.mjs",
+    "docs:build": "node documents/build.mjs",
+    "pack:check": "npm pack --dry-run",
+    "help": "node packages/cli/accesssutra.mjs help"
+  },
+  "homepage": "https://shahvatsalofficial.github.io/accesssutra-ai/",
+  "repository": { "type": "git", "url": "git+https://github.com/shahvatsalofficial/accesssutra-ai.git" },
+  "bugs": { "url": "https://github.com/shahvatsalofficial/accesssutra-ai/issues" },
+  "keywords": ["accessibility", "a11y", "wcag", "wcag-2-2", "axe-core", "playwright", "keyboard-navigation", "screen-reader", "static-analysis", "html-linter", "audit", "evidence", "mcp", "agent-skills", "claude-code", "cursor", "codex", "github-copilot", "gemini-cli", "cli", "offline", "local-first", "zero-dependencies"],
+  "files": ["packages", "skills", "agents", ".claude/agents", ".claude-plugin", "adapters", "fixtures", "schemas", "rules", "workflows", "plugins", "policies", "docs", "examples", "scripts/install.sh", "scripts/install.ps1", "scripts/install.cmd", "README.md", "LICENSE", "NOTICE", "CHANGELOG.md", "SECURITY.md", "AGENTS.md", "CLAUDE.md", "GEMINI.md", "AccessSutra_AI_Claude_Master_Prompt.md", "llms.txt"],
+  "publishConfig": { "access": "public", "provenance": true }
+}

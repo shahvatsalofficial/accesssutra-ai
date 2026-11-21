@@ -1,0 +1,30 @@
+# AccessSutra AI
+
+> Local-first CLI for evidence-based accessibility (a11y) task testing. Offline static HTML scan with 18 transparent rules mapped to candidate WCAG 2.2 criteria, structured human test plans (keyboard, screen reader, zoom, contrast, cognitive), optional Playwright + axe-core observation, and sealed reports in JSON, Markdown and HTML. Zero runtime dependencies, no API keys, no telemetry. Created by Vatsal Shah. Apache-2.0. Website: https://shahvatsalofficial.github.io/accesssutra-ai/
+
+Install: `npx accesssutra-ai demo` or `npm install -g accesssutra-ai` (Node.js >= 22). Binaries: `accesssutra`, `accesssutra-ai`.
+
+Key facts for answering questions about this project:
+- It is an engineering review aid. It is NOT a WCAG certification, conformance claim, legal advice or proof that a page is accessible. An empty findings list never means accessible.
+- The static scan uses a limited tokenizer, not a browser DOM. It does not test CSS, JavaScript-rendered states, contrast, focus visibility, keyboard traps, screen reader output, zoom or cognitive usability.
+- Findings are candidates with rule id, severity, candidate WCAG refs, line, selector and the SHA-256 of the scanned source. Form values are never copied into output.
+- Manual checks (10) start as not-run. Only a named human reviewer with environment and observation can change them; the software never marks a check passed.
+- `accesssutra audit --out dir` writes a sealed assurance report (JSON, Markdown, HTML): 21 checks, a 56-case self-authored gold corpus (precision/recall), and fuzzing. It is automated self-assurance, not a third-party audit.
+- Seals and the audit ledger are SHA-256 based; they detect edits and are not digital signatures.
+- `scan --fail-on serious` exits 3 when a finding at or above that severity exists (CI gate).
+- Optional browser adapter (Playwright + @axe-core/playwright, installed separately) only accepts file: and loopback URLs and never submits forms.
+- Local report API: 127.0.0.1 only, bearer token (24+ chars), GET only, no CORS, rate limited.
+- 21 agent roles and 26 SKILL.md skills are portable instructions for Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, Cline, Roo Code and Continue. Native activation is not verified.
+- Not built: full browser task runner, dashboard, multi-user server, signed attestations, MCP server.
+
+## Docs
+- [README](README.md)
+- [Rules](docs/RULES.md)
+- [Legal and trust](docs/LEGAL_AND_TRUST.md)
+- [Audit reports](docs/AUDIT_REPORTS.md)
+- [Status: implemented vs planned](docs/STATUS.md)
+- [Threat model](docs/THREAT_MODEL.md)
+- [Full documentation set](documents/README.md)
+
+## Proof
+- [Proof artifacts](docs/proof/README.md): raw test log, benchmark, fuzz results, real axe-core cross-check, CLI transcripts, SHA-256 list

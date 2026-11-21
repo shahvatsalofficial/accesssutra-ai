@@ -1,0 +1,4 @@
+$ accesssutra report --scan <tmp>\scan.json --manual <tmp>\manual.json --out <tmp>\report
+Wrote JSON, Markdown and HTML to <tmp>\report
+
+[exit 0]

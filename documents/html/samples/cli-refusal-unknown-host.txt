@@ -1,0 +1,6 @@
+$ accesssutra install-ide --target <tmp>\p2 --host ../x
+
+[stderr]
+AccessSutra: Unsupported host ../x
+
+[exit 1]

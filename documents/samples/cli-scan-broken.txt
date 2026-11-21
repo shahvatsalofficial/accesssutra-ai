@@ -1,0 +1,4 @@
+$ accesssutra scan --input fixtures/signup-broken.html --out <tmp>\scan.json
+Limited scan: 5 findings (2 human-review); no conformance claim
+
+[exit 0]

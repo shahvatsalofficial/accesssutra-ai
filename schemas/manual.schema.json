@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccessSutra manual task plan",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "task",
+    "checks",
+    "completion",
+    "disclaimer"
+  ],
+  "properties": {
+    "task": {
+      "type": "object"
+    },
+    "checks": {
+      "type": "array"
+    },
+    "completion": {
+      "type": "object"
+    },
+    "disclaimer": {
+      "type": "string"
+    }
+  }
+}

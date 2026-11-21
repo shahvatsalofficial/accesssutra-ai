@@ -1,0 +1,6 @@
+$ accesssutra browser --url https://example.com --out <tmp>\b.json
+
+[stderr]
+AccessSutra: Browser adapter only accepts file: or loopback URLs; external origins are blocked
+
+[exit 1]

@@ -1,0 +1,7 @@
+$ accesssutra scan --input fixtures/signup-broken.html --out <tmp>\scan2.json --fail-on serious
+Limited scan: 5 findings (2 human-review); no conformance claim
+
+[stderr]
+Gate failed: finding(s) at serious or above
+
+[exit 3]

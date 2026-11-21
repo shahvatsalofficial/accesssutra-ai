@@ -1,0 +1,36 @@
+AccessSutra AI — Clean Extraction Verification
+Creator: Vatsal Shah
+Date: 2026-11-22
+Portfolio concept: AI-010
+
+Archive: AccessSutra_AI_Complete_Root_Folder.zip
+ZIP integrity: PASS
+Files in ZIP: 167
+Clean extraction: PASS
+Runtime: Node.js v22.16.0 on Linux
+
+Commands executed from a clean ZIP extraction:
+  npm test       PASS — 56 tests, 56 passed, 0 failed
+  npm run doctor PASS — offline no-runtime-dependency CLI
+  npm run demo   PASS — synthetic signup fixture: 5 limited findings; 10 manual checks not tested
+
+Core implementation:
+  Offline local static HTML heuristic scanner — TESTED
+  Form labels, missing alt, nameless button, error-association review — TESTED
+  Source digest, line/structural selector, stable issue IDs — TESTED
+  Manual task checklist and attributed reviewer observations — TESTED with synthetic inputs only
+  JSON/Markdown/HTML reports with escaping and limitations — TESTED
+  Hash-chained local audit events and tamper detection — TESTED (not signed/immutable)
+  Authenticated loopback read-only HTTP API — TESTED
+  Project-local IDE copier — TESTED
+  21 agent role files, 26 SKILL.md, 8 workflows, 10 rules, 9 IDE instruction packs — FILES VERIFIED
+
+Not executed / not verified:
+  Real Playwright/Chromium/axe browser audit — optional adapter source only
+  Actual keyboard navigation, keyboard trap or screen reader session
+  Live contrast/reflow/mobile/TV remote testing
+  Native activation in each IDE, Windows/macOS runtime
+  Public GitHub/npm release, production multi-user server, hosted CI
+  WCAG conformance, certification or legal compliance assessment
+
+Important: This is a VERIFIED OFFLINE STARTER, not a completed accessibility assessment or production release.

@@ -1,0 +1,29 @@
+[
+  {
+    "fixture": "signup-broken",
+    "axeViolations": [
+      {
+        "ruleId": "button-name",
+        "impact": "critical",
+        "nodes": 1
+      },
+      {
+        "ruleId": "image-alt",
+        "impact": "critical",
+        "nodes": 1
+      }
+    ],
+    "axePassedRules": 27,
+    "browser": "Chromium via Playwright",
+    "browserVersion": "131.0.6778.33",
+    "tabSamples": 15
+  },
+  {
+    "fixture": "signup-good",
+    "axeViolations": [],
+    "axePassedRules": 27,
+    "browser": "Chromium via Playwright",
+    "browserVersion": "131.0.6778.33",
+    "tabSamples": 15
+  }
+]

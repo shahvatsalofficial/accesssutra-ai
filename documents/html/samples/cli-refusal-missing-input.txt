@@ -1,0 +1,6 @@
+$ accesssutra scan --input
+
+[stderr]
+AccessSutra: Required --input
+
+[exit 1]

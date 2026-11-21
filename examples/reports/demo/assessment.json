@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "1.0.0",
+  "product": "AccessSutra AI",
+  "toolVersion": "0.2.0",
+  "source": {
+    "source": "signup-broken.html",
+    "bytes": 534,
+    "sha256": "c015642297fabb98e69db5f895f4ef2b14251f673d991bb8d83b9fb288ee16f8",
+    "domElements": 17
+  },
+  "summary": {
+    "detected": 3,
+    "requiresReview": 2,
+    "total": 5,
+    "bySeverity": {
+      "critical": 0,
+      "serious": 3,
+      "moderate": 2,
+      "minor": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "AS-e64c04a03ff33335",
+      "ruleId": "AS-FORM-001",
+      "title": "Form control lacks a detectable accessible name",
+      "severity": "serious",
+      "kind": "detected",
+      "priorityBasis": "Rule severity heuristic only; actual task impact requires human review",
+      "confidence": "limited-static-evidence",
+      "wcagCandidateRefs": [
+        "3.3.2",
+        "4.1.2"
+      ],
+      "source": {
+        "file": "signup-broken.html",
+        "line": 4,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)"
+      },
+      "detail": "",
+      "remediation": "Use an associated visible <label>, or an appropriate accessible name where necessary.",
+      "reproduce": "Inspect signup-broken.html line 4, html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2); confirm in a rendered browser and with affected users."
+    },
+    {
+      "id": "AS-b156d446278dc6ea",
+      "ruleId": "AS-BTN-001",
+      "title": "Button lacks a detectable accessible name",
+      "severity": "serious",
+      "kind": "detected",
+      "priorityBasis": "Rule severity heuristic only; actual task impact requires human review",
+      "confidence": "limited-static-evidence",
+      "wcagCandidateRefs": [
+        "4.1.2"
+      ],
+      "source": {
+        "file": "signup-broken.html",
+        "line": 5,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1)"
+      },
+      "detail": "",
+      "remediation": "Add visible button text or an appropriate accessible name.",
+      "reproduce": "Inspect signup-broken.html line 5, html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1); confirm in a rendered browser and with affected users."
+    },
+    {
+      "id": "AS-f314b8a7f4d16d95",
+      "ruleId": "AS-IMG-001",
+      "title": "Image is missing alt attribute",
+      "severity": "serious",
+      "kind": "detected",
+      "priorityBasis": "Rule severity heuristic only; actual task impact requires human review",
+      "confidence": "limited-static-evidence",
+      "wcagCandidateRefs": [
+        "1.1.1"
+      ],
+      "source": {
+        "file": "signup-broken.html",
+        "line": 6,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > img:nth-of-type(1)"
+      },
+      "detail": "",
+      "remediation": "Provide an appropriate alt text, or alt=\"\" for genuinely decorative imagery.",
+      "reproduce": "Inspect signup-broken.html line 6, html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > img:nth-of-type(1); confirm in a rendered browser and with affected users."
+    },
+    {
+      "id": "AS-1d61cb74598eca62",
+      "ruleId": "AS-FORM-002",
+      "title": "Invalid form control lacks a detectable error association",
+      "severity": "moderate",
+      "kind": "review",
+      "priorityBasis": "Rule severity heuristic only; actual task impact requires human review",
+      "confidence": "requires-human-verification",
+      "wcagCandidateRefs": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "source": {
+        "file": "signup-broken.html",
+        "line": 4,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)"
+      },
+      "detail": "aria-invalid is true; no programmatic error reference detected in source.",
+      "remediation": "Associate clear error text using aria-describedby or aria-errormessage and verify the message is announced.",
+      "reproduce": "Inspect signup-broken.html line 4, html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2); confirm in a rendered browser and with affected users."
+    },
+    {
+      "id": "AS-acbabe3ef7821995",
+      "ruleId": "AS-KEY-001",
+      "title": "Clickable nonsemantic element needs keyboard review",
+      "severity": "moderate",
+      "kind": "review",
+      "priorityBasis": "Rule severity heuristic only; actual task impact requires human review",
+      "confidence": "requires-human-verification",
+      "wcagCandidateRefs": [
+        "2.1.1"
+      ],
+      "source": {
+        "file": "signup-broken.html",
+        "line": 6,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1)"
+      },
+      "detail": "",
+      "remediation": "Use a native button or link; manually verify keyboard activation and focus.",
+      "reproduce": "Inspect signup-broken.html line 6, html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1); confirm in a rendered browser and with affected users."
+    }
+  ],
+  "manual": {
+    "schemaVersion": "1.0.0",
+    "product": "AccessSutra AI",
+    "task": {
+      "id": "TASK-b260d0acb4",
+      "name": "Create a test account on a safe local signup fixture",
+      "steps": [
+        "Open the signup page in a local test browser",
+        "Using only Tab and Shift+Tab, locate and identify each field",
+        "Use synthetic name and email values; do not submit real data",
+        "Check whether the error is identified and can be corrected",
+        "Check focus visibility, order and escape from any overlay",
+        "Repeat with a named screen reader and record what is announced"
+      ],
+      "environment": "Local test page; browser, OS and assistive technology to be recorded by reviewer",
+      "dataPolicy": "Use synthetic test data only; never submit production forms."
+    },
+    "checks": [
+      {
+        "id": "keyboard-navigation",
+        "title": "Keyboard-only journey",
+        "instructions": "Use Tab and Shift+Tab to reach all essential controls; note focus order and unexpected changes.",
+        "wcagCandidateRefs": [
+          "2.1.1",
+          "2.4.3"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "keyboard-trap",
+        "title": "No keyboard trap",
+        "instructions": "Move into and out of dialogs, menus and widgets using only keyboard; document any trapped focus.",
+        "wcagCandidateRefs": [
+          "2.1.2"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "focus-visibility",
+        "title": "Focus visibility",
+        "instructions": "At each step, visually locate focus and check it is not fully hidden by sticky UI.",
+        "wcagCandidateRefs": [
+          "2.4.7",
+          "2.4.11"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "keyboard-activation",
+        "title": "Control activation",
+        "instructions": "Activate controls using Enter/Space where appropriate; do not submit real data.",
+        "wcagCandidateRefs": [
+          "2.1.1"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "form-labels",
+        "title": "Field names and instructions",
+        "instructions": "Verify labels and instructions are understood and announced by selected assistive technology.",
+        "wcagCandidateRefs": [
+          "3.3.2",
+          "4.1.2"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "form-errors",
+        "title": "Error identification and recovery",
+        "instructions": "Use synthetic values on a safe test instance; confirm error identification, correction suggestions and focus.",
+        "wcagCandidateRefs": [
+          "3.3.1",
+          "3.3.3"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "screen-reader",
+        "title": "Screen reader journey",
+        "instructions": "With a named AT/browser/OS combination, verify landmarks, names, state and errors; record observations.",
+        "wcagCandidateRefs": [
+          "1.3.1",
+          "4.1.2",
+          "4.1.3"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "zoom-reflow",
+        "title": "Zoom and reflow",
+        "instructions": "Check 200% zoom, narrow viewport and text resizing without losing essential functionality.",
+        "wcagCandidateRefs": [
+          "1.4.4",
+          "1.4.10"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "contrast",
+        "title": "Visual contrast",
+        "instructions": "Measure text and essential UI contrast using an approved tool; include sampled colors and conditions.",
+        "wcagCandidateRefs": [
+          "1.4.3",
+          "1.4.11"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      },
+      {
+        "id": "cognitive",
+        "title": "Comprehension and completion",
+        "instructions": "Ask a participant or qualified reviewer to assess clarity, predictable navigation, timing and task completion.",
+        "wcagCandidateRefs": [
+          "3.2.3",
+          "3.3.2"
+        ],
+        "status": "not-run",
+        "reviewer": null,
+        "environment": null,
+        "observation": null
+      }
+    ],
+    "completion": {
+      "status": "not-tested",
+      "passed": 0,
+      "failed": 0,
+      "notRun": 10
+    },
+    "disclaimer": "AccessSutra reports limited checks and human testing tasks; they do not establish WCAG conformance, certification, legal compliance, or usability for every person."
+  },
+  "browser": {
+    "status": "not-run",
+    "message": "No Playwright/axe browser run attached"
+  },
+  "requiredHumanChecks": [
+    "JavaScript-rendered states",
+    "Actual keyboard focus and traps",
+    "Visible focus and focus obscuration",
+    "Screen reader output",
+    "Contrast and zoom/reflow",
+    "Cognitive and language usability",
+    "Mobile/TV remote interactions",
+    "Real error handling after submission"
+  ],
+  "limitations": [
+    "Heuristic tokenizer, not full HTML5 DOM parsing or axe-core",
+    "A reported finding is a candidate requiring browser/human verification",
+    "No pass score or WCAG conformance claim"
+  ],
+  "disclaimer": "AccessSutra reports limited checks and human testing tasks; they do not establish WCAG conformance, certification, legal compliance, or usability for every person.",
+  "seal": {
+    "algorithm": "sha256-canonical-json",
+    "sha256": "e154ea0a55d6c7f470c204c7acf43d6a240bb2932042d0c251be0486f0385edc",
+    "note": "Detects edits; not a digital signature."
+  }
+}

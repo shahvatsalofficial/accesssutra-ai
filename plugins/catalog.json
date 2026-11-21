@@ -1,0 +1,67 @@
+{
+  "product": "AccessSutra AI",
+  "creator": "Vatsal Shah",
+  "disclaimer": "Catalog is not a list of installed integrations",
+  "integrations": [
+    {
+      "name": "Node.js offline scanner",
+      "status": "implemented",
+      "access": "local file read only",
+      "keyRequired": false
+    },
+    {
+      "name": "Playwright",
+      "status": "optional adapter; run once on fixtures (see docs/proof)",
+      "access": "local browser process, file/loopback origins",
+      "keyRequired": false
+    },
+    {
+      "name": "@axe-core/playwright",
+      "status": "optional adapter; run once on fixtures (see docs/proof)",
+      "access": "DOM in consented local browser",
+      "keyRequired": false
+    },
+    {
+      "name": "Pa11y",
+      "status": "candidate",
+      "access": "optional local CLI",
+      "keyRequired": false
+    },
+    {
+      "name": "Lighthouse",
+      "status": "candidate",
+      "access": "optional local browser",
+      "keyRequired": false
+    },
+    {
+      "name": "Accessibility Insights",
+      "status": "human workflow candidate",
+      "access": "reviewer browser",
+      "keyRequired": false
+    },
+    {
+      "name": "NVDA/JAWS/VoiceOver/TalkBack",
+      "status": "human review tools, not automated",
+      "access": "reviewer-operated",
+      "keyRequired": false
+    },
+    {
+      "name": "GitHub Actions/GitLab CI/Azure DevOps",
+      "status": "CI template or future adapters",
+      "access": "repository CI",
+      "keyRequired": false
+    },
+    {
+      "name": "MCP read-only server",
+      "status": "planned",
+      "access": "local JSON schema tools",
+      "keyRequired": false
+    },
+    {
+      "name": "PostgreSQL + OIDC + object store",
+      "status": "enterprise server roadmap",
+      "access": "self-hosted with auth",
+      "keyRequired": false
+    }
+  ]
+}

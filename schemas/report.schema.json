@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccessSutra evidence report",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "source",
+    "summary",
+    "findings",
+    "manual",
+    "browser",
+    "requiredHumanChecks",
+    "limitations",
+    "disclaimer"
+  ]
+}

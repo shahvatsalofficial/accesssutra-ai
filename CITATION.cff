@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use AccessSutra AI, please cite it as below."
+title: "AccessSutra AI"
+abstract: "Local-first, evidence-based accessibility task-testing CLI: 18-rule static HTML scan, human manual-test plans, sealed JSON/Markdown/HTML reports, assurance audit, optional Playwright and axe-core adapter, 21 agent roles and 26 portable skills."
+type: software
+authors:
+  - family-names: Shah
+    given-names: Vatsal
+version: 0.2.0
+date-released: 2026-11-22
+license: Apache-2.0
+url: "https://shahvatsalofficial.github.io/accesssutra-ai/"
+repository-code: "https://github.com/shahvatsalofficial/accesssutra-ai"
+keywords: [accessibility, a11y, wcag, axe-core, playwright, keyboard-navigation, audit, evidence, agent-skills]

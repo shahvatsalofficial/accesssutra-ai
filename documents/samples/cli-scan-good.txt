@@ -1,0 +1,4 @@
+$ accesssutra scan --input fixtures/signup-good.html --out <tmp>\scan3.json --fail-on minor
+Limited scan: 0 findings (0 human-review); no conformance claim
+
+[exit 0]

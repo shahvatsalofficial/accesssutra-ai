@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "product": "AccessSutra AI",
+  "task": {
+    "id": "TASK-b260d0acb4",
+    "name": "Create a test account on a safe local signup fixture",
+    "steps": [
+      "Open the signup page in a local test browser",
+      "Using only Tab and Shift+Tab, locate and identify each field",
+      "Use synthetic name and email values; do not submit real data",
+      "Check whether the error is identified and can be corrected",
+      "Check focus visibility, order and escape from any overlay",
+      "Repeat with a named screen reader and record what is announced"
+    ],
+    "environment": "Local test page; browser, OS and assistive technology to be recorded by reviewer",
+    "dataPolicy": "Use synthetic test data only; never submit production forms."
+  },
+  "checks": [
+    {
+      "id": "keyboard-navigation",
+      "title": "Keyboard-only journey",
+      "instructions": "Use Tab and Shift+Tab to reach all essential controls; note focus order and unexpected changes.",
+      "wcagCandidateRefs": [
+        "2.1.1",
+        "2.4.3"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "keyboard-trap",
+      "title": "No keyboard trap",
+      "instructions": "Move into and out of dialogs, menus and widgets using only keyboard; document any trapped focus.",
+      "wcagCandidateRefs": [
+        "2.1.2"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "focus-visibility",
+      "title": "Focus visibility",
+      "instructions": "At each step, visually locate focus and check it is not fully hidden by sticky UI.",
+      "wcagCandidateRefs": [
+        "2.4.7",
+        "2.4.11"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "keyboard-activation",
+      "title": "Control activation",
+      "instructions": "Activate controls using Enter/Space where appropriate; do not submit real data.",
+      "wcagCandidateRefs": [
+        "2.1.1"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "form-labels",
+      "title": "Field names and instructions",
+      "instructions": "Verify labels and instructions are understood and announced by selected assistive technology.",
+      "wcagCandidateRefs": [
+        "3.3.2",
+        "4.1.2"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "form-errors",
+      "title": "Error identification and recovery",
+      "instructions": "Use synthetic values on a safe test instance; confirm error identification, correction suggestions and focus.",
+      "wcagCandidateRefs": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "screen-reader",
+      "title": "Screen reader journey",
+      "instructions": "With a named AT/browser/OS combination, verify landmarks, names, state and errors; record observations.",
+      "wcagCandidateRefs": [
+        "1.3.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "zoom-reflow",
+      "title": "Zoom and reflow",
+      "instructions": "Check 200% zoom, narrow viewport and text resizing without losing essential functionality.",
+      "wcagCandidateRefs": [
+        "1.4.4",
+        "1.4.10"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "contrast",
+      "title": "Visual contrast",
+      "instructions": "Measure text and essential UI contrast using an approved tool; include sampled colors and conditions.",
+      "wcagCandidateRefs": [
+        "1.4.3",
+        "1.4.11"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    },
+    {
+      "id": "cognitive",
+      "title": "Comprehension and completion",
+      "instructions": "Ask a participant or qualified reviewer to assess clarity, predictable navigation, timing and task completion.",
+      "wcagCandidateRefs": [
+        "3.2.3",
+        "3.3.2"
+      ],
+      "status": "not-run",
+      "reviewer": null,
+      "environment": null,
+      "observation": null
+    }
+  ],
+  "completion": {
+    "status": "not-tested",
+    "passed": 0,
+    "failed": 0,
+    "notRun": 10
+  },
+  "disclaimer": "AccessSutra reports limited checks and human testing tasks; they do not establish WCAG conformance, certification, legal compliance, or usability for every person."
+}

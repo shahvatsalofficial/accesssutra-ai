@@ -1,0 +1,13 @@
+AccessSutra AI
+Copyright 2026 Vatsal Shah
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+No third-party code is bundled. The core has zero runtime dependencies (Node.js built-ins only).
+Optional Playwright and @axe-core/playwright are installed separately by the user under their own licenses.
+Everything under fixtures/ and examples/ is synthetic and describes no real person, company or site.
+
+WCAG, W3C, Deque, axe-core, Microsoft, Playwright, NVDA, JAWS, VoiceOver, TalkBack, Claude, Anthropic, Cursor,
+Codex, OpenAI, GitHub, Copilot, Gemini, Google, Windsurf, Cline, Roo Code, Continue, Node.js and npm are names or
+trademarks of their owners, used only to describe compatibility or mapping. No affiliation or endorsement is
+implied. W3C text is not reproduced; criteria are cited by number.

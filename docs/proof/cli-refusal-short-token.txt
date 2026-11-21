@@ -1,0 +1,6 @@
+$ accesssutra serve --dir examples/reports/demo
+
+[stderr]
+AccessSutra: Bearer token must have at least 24 characters
+
+[exit 1]

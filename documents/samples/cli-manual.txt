@@ -1,0 +1,4 @@
+$ accesssutra manual --task fixtures/signup-task.json --out <tmp>\manual.json
+Manual plan: 10 checks; not-tested
+
+[exit 0]

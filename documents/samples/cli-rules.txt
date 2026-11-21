@@ -1,0 +1,21 @@
+$ accesssutra rules
+AS-DOC-001  moderate WCAG 2.4.2  Page title is missing
+AS-DOC-002  moderate WCAG 3.1.1  Document language is missing
+AS-DOC-003  moderate WCAG 3.1.1  Document language code looks malformed
+AS-FORM-001  serious  WCAG 3.3.2,4.1.2  Form control lacks a detectable accessible name
+AS-FORM-002  moderate WCAG 3.3.1,3.3.3  Invalid form control lacks a detectable error association
+AS-FORM-003  moderate WCAG 1.3.1,3.3.2  Label "for" does not point to an existing element
+AS-IMG-001  serious  WCAG 1.1.1  Image is missing alt attribute
+AS-BTN-001  serious  WCAG 4.1.2  Button lacks a detectable accessible name
+AS-LINK-001  serious  WCAG 2.4.4,4.1.2  Link lacks a detectable accessible name
+AS-FRAME-001  moderate WCAG 2.4.1,4.1.2  Frame lacks a title
+AS-ID-001  moderate WCAG -  Duplicate id may break references
+AS-ARIA-001  moderate WCAG 4.1.2  ARIA reference does not resolve to an element
+AS-ARIA-002  serious  WCAG 4.1.2,2.4.3  Focusable element is inside aria-hidden or hidden content
+AS-FOCUS-001  moderate WCAG 2.4.3  Positive tabindex may disrupt focus order
+AS-KEY-001  moderate WCAG 2.1.1  Clickable nonsemantic element needs keyboard review
+AS-VIEW-001  serious  WCAG 1.4.4  Viewport meta may block zoom
+AS-MEDIA-001  moderate WCAG 1.4.2,2.2.2  Autoplaying media without controls needs review
+AS-REFRESH-001  moderate WCAG 2.2.1,3.2.5  Meta refresh may remove user control of timing
+
+[exit 0]

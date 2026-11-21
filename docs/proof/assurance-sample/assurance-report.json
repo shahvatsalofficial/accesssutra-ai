@@ -1,0 +1,349 @@
+{
+  "schema": "accesssutra.assurance/1",
+  "product": "AccessSutra AI",
+  "toolVersion": "0.2.0",
+  "rulesVersion": "2.0.0",
+  "generatedAt": "2026-11-21T19:42:56.780Z",
+  "environment": {
+    "node": "v24.15.0",
+    "platform": "win32/x64",
+    "os": "Windows_NT 10.0.26300"
+  },
+  "nature": "Automated self-assurance run by the tool on its own code. It is NOT a third-party audit, WCAG conformance assessment, or legal opinion.",
+  "verdict": "ASSURANCE_CHECKS_PASSED_HUMAN_REVIEW_STILL_REQUIRED",
+  "summary": {
+    "total": 21,
+    "passed": 20,
+    "failed": 0,
+    "skipped": 1
+  },
+  "checks": [
+    {
+      "id": "AS-A01",
+      "area": "determinism",
+      "title": "Same input yields byte-identical scan JSON",
+      "status": "pass",
+      "evidence": "4993 bytes compared"
+    },
+    {
+      "id": "AS-A02",
+      "area": "honesty",
+      "title": "Clean fixture reports no findings yet still lists untested areas",
+      "status": "pass",
+      "evidence": "findings=0, untested=8"
+    },
+    {
+      "id": "AS-A03",
+      "area": "honesty",
+      "title": "Disclaimer present in scan, manual plan, report, Markdown and HTML",
+      "status": "pass",
+      "evidence": "all five outputs"
+    },
+    {
+      "id": "AS-A04",
+      "area": "privacy",
+      "title": "Form field values are never copied into output",
+      "status": "pass",
+      "evidence": "value and placeholder absent"
+    },
+    {
+      "id": "AS-A05",
+      "area": "injection",
+      "title": "HTML report escapes hostile file name and Markdown report neutralises links",
+      "status": "pass",
+      "evidence": "payload inert in both formats"
+    },
+    {
+      "id": "AS-A06",
+      "area": "integrity",
+      "title": "Report seal verifies and detects a one-character edit",
+      "status": "pass",
+      "evidence": "seal valid; tampered copy rejected"
+    },
+    {
+      "id": "AS-A07",
+      "area": "integrity",
+      "title": "Audit ledger detects edits, reordering and truncation of the middle",
+      "status": "pass",
+      "evidence": "valid chain accepted; edit, swap, gap rejected"
+    },
+    {
+      "id": "AS-A08",
+      "area": "limits",
+      "title": "Oversize and over-nested HTML refused with a clear error",
+      "status": "pass",
+      "evidence": "2/2 refused"
+    },
+    {
+      "id": "AS-A09",
+      "area": "filesystem",
+      "title": "Symlink input refused",
+      "status": "skipped",
+      "evidence": "host cannot create symlinks without privilege"
+    },
+    {
+      "id": "AS-A10",
+      "area": "manual-evidence",
+      "title": "Observations need reviewer, environment and note; credentials are rejected; duplicates and unknown ids refused",
+      "status": "pass",
+      "evidence": "5/5 rejected"
+    },
+    {
+      "id": "AS-A11",
+      "area": "manual-evidence",
+      "title": "A fresh manual plan is \"not-tested\"; software never marks a check passed by itself",
+      "status": "pass",
+      "evidence": "10 checks all not-run"
+    },
+    {
+      "id": "AS-A12",
+      "area": "scope",
+      "title": "Browser adapter URL allowlist blocks external, credentialed and non-http schemes",
+      "status": "pass",
+      "evidence": "9 blocked, 3 allowed"
+    },
+    {
+      "id": "AS-A13",
+      "area": "server",
+      "title": "Report server: auth, read-only, no CORS, bad Host rejected, rate limit, path confined",
+      "status": "pass",
+      "evidence": "statuses 401/401/200/405/404, host=403, rateLimited=true"
+    },
+    {
+      "id": "AS-A14",
+      "area": "server",
+      "title": "Server refuses to start with a short token",
+      "status": "pass",
+      "evidence": "refused"
+    },
+    {
+      "id": "AS-A15",
+      "area": "installer",
+      "title": "IDE copier refuses the source repo, unknown hosts, path-like hosts, overwrite without --force; dry-run writes nothing",
+      "status": "pass",
+      "evidence": "3 refusals, dry-run wrote nothing, overwrite refused"
+    },
+    {
+      "id": "AS-A16",
+      "area": "rules",
+      "title": "Every rule has WCAG refs array, severity, title and remediation",
+      "status": "pass",
+      "evidence": "18 rules, version 2.0.0"
+    },
+    {
+      "id": "AS-B01",
+      "area": "accuracy",
+      "title": "Gold corpus: no false positives on clean pages",
+      "status": "pass",
+      "evidence": "fp=0 of 56 cases"
+    },
+    {
+      "id": "AS-B02",
+      "area": "accuracy",
+      "title": "Gold corpus: every labelled defect found",
+      "status": "pass",
+      "evidence": "fn=0"
+    },
+    {
+      "id": "AS-B03",
+      "area": "accuracy",
+      "title": "Gold corpus: exact-match rate 100%",
+      "status": "pass",
+      "evidence": "56/56"
+    },
+    {
+      "id": "AS-F01",
+      "area": "robustness",
+      "title": "Fuzzing: no unexpected exception or invalid output",
+      "status": "pass",
+      "evidence": "2213 inputs, 2211 scanned, 2 documented-limit refusals, 0 unexpected"
+    },
+    {
+      "id": "AS-F02",
+      "area": "robustness",
+      "title": "Fuzzing: slowest input under 5 s",
+      "status": "pass",
+      "evidence": "max 670 ms"
+    }
+  ],
+  "benchmark": {
+    "corpus": "packages/core/corpus.mjs",
+    "labelling": "self-authored by the maintainer; not an independent benchmark",
+    "cases": 56,
+    "exactMatch": 56,
+    "exactMatchRate": 1,
+    "tp": 33,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "rules": [
+      {
+        "ruleId": "AS-DOC-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-DOC-002",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-DOC-003",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-FORM-001",
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-FORM-002",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-FORM-003",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-IMG-001",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-BTN-001",
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-LINK-001",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-FRAME-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-ID-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-ARIA-001",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-ARIA-002",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-FOCUS-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-KEY-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-VIEW-001",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-MEDIA-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      {
+        "ruleId": "AS-REFRESH-001",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      }
+    ],
+    "misses": []
+  },
+  "fuzz": {
+    "seed": 20261122,
+    "cases": 2213,
+    "returned": 2211,
+    "limitErrors": 2,
+    "unexpected": 0,
+    "maxMs": 670,
+    "notes": []
+  },
+  "limitations": [
+    "Self-authored gold corpus: results show consistency with the maintainer's labels, not real-world accuracy.",
+    "Static heuristics only: no rendering, CSS, JavaScript, focus, contrast, zoom, screen reader or task testing.",
+    "Optional Playwright/axe adapter is exercised only for its URL guard here; browser execution is reported separately when run.",
+    "The seal detects edits; it is not a digital signature or timestamp proof.",
+    "A passing run does not mean any page is accessible."
+  ],
+  "seal": {
+    "algorithm": "sha256-canonical-json",
+    "sha256": "e6712f13c116c9342f4ee5ed994d8fcd2c25bdd16a22a2a6fb7a4597f652fd09",
+    "note": "Detects edits; not a digital signature."
+  }
+}

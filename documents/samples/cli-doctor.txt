@@ -1,0 +1,12 @@
+$ accesssutra doctor
+{
+  "version": "0.2.0",
+  "node": "v24.15.0",
+  "platform": "win32",
+  "core": "offline/no runtime dependencies",
+  "browserAdapter": "optional; not assumed installed",
+  "server": "loopback read-only",
+  "disclaimer": "Not WCAG certification"
+}
+
+[exit 0]

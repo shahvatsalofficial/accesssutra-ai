@@ -1,0 +1,134 @@
+{
+  "status": "browser-observed",
+  "urlScope": "local-file",
+  "browser": "Chromium via Playwright",
+  "version": "131.0.6778.33",
+  "focus": [
+    {
+      "step": 1,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 2,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 3,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 4,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 5,
+      "tag": "BODY",
+      "selector": "body",
+      "focused": false
+    },
+    {
+      "step": 6,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 7,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 8,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 9,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 10,
+      "tag": "BODY",
+      "selector": "body",
+      "focused": false
+    },
+    {
+      "step": 11,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 12,
+      "tag": "INPUT",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 13,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1)",
+      "focused": true
+    },
+    {
+      "step": 14,
+      "tag": "BUTTON",
+      "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(2)",
+      "focused": true
+    },
+    {
+      "step": 15,
+      "tag": "BODY",
+      "selector": "body",
+      "focused": false
+    }
+  ],
+  "axe": {
+    "status": "executed",
+    "engine": "axe-core via @axe-core/playwright",
+    "violations": [
+      {
+        "ruleId": "button-name",
+        "impact": "critical",
+        "help": "Buttons must have discernible text",
+        "affectedNodes": 1,
+        "targets": [
+          [
+            "button:nth-child(4)"
+          ]
+        ]
+      },
+      {
+        "ruleId": "image-alt",
+        "impact": "critical",
+        "help": "Images must have alternative text",
+        "affectedNodes": 1,
+        "targets": [
+          [
+            "img"
+          ]
+        ]
+      }
+    ],
+    "incompleteCount": 0,
+    "passedRuleCount": 27
+  },
+  "notes": [
+    "Tab sampling alone does not prove correct focus order or absence of traps",
+    "No form submission, screenshots or input values collected",
+    "Screen reader and real task completion require human review"
+  ],
+  "disclaimer": "AccessSutra reports limited checks and human testing tasks; they do not establish WCAG conformance, certification, legal compliance, or usability for every person."
+}
