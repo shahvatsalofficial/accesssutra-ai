@@ -1,5 +1,7 @@
 # Operations and release
 
+> CI jobs, the release procedure, npm trusted publishing and how this site is built.
+
 ## CI (GitHub Actions)
 
 | Job | What it proves |
@@ -10,6 +12,8 @@
 | secrets-scan | No token patterns committed |
 
 The assurance report from the Ubuntu Node 24 run is uploaded as an artifact.
+
+{{svg:ci}}
 
 ## Release steps
 

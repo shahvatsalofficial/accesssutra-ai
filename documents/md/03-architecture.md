@@ -1,5 +1,7 @@
 # Architecture
 
+> How the CLI, tokenizer, rules, reports, assurance engine and optional adapters fit together, and why each design decision was made.
+
 ## Layers
 
 ```text
@@ -15,12 +17,18 @@ CLI (packages/cli/accesssutra.mjs)
  └─ server/server.mjs    loopback read-only report API
 ```
 
+{{svg:arch}}
+
 ## Data flow
+
+{{svg:pipeline}}
 
 1. `scan`: file (regular, non-symlink, 2 MiB max) -> tokenizer -> rules -> `scan.json` (no field values).
 2. `manual`: task JSON -> plan with 10 not-run checks -> optional human observations -> `manual.json`.
 3. `report`: scan + optional manual + optional browser JSON -> `assessment.json|md|html`, each carrying the disclaimer and a SHA-256 seal.
 4. `audit`: runs checks against fixtures and temporary directories, benchmarks the corpus, fuzzes, then writes the assurance report with its own seal.
+
+{{svg:seal}}
 
 ## Key decisions
 

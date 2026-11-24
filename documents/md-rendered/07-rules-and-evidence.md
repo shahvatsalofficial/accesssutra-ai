@@ -1,6 +1,16 @@
 # Rules and evidence model
 
+> All 18 rules, how they map to candidate WCAG criteria, and the evidence ladder behind every statement.
+
 18 rules. Full table with severity, candidate WCAG criteria and remediation: see `docs/RULES.md` in the repository.
+
+{{chart:rules}}
+
+{{chart:wcag}}
+
+## All rules
+
+{{rules}}
 
 ## Rule families
 
@@ -14,6 +24,8 @@
 | Zoom and timing | AS-VIEW-001, AS-MEDIA-001, AS-REFRESH-001 | Zoom blocked? Autoplay? Timed refresh? |
 
 ## Evidence model
+
+{{svg:ladder}}
 
 | Source | Strength | Statement allowed |
 |---|---|---|

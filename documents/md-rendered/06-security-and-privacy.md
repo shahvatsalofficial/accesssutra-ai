@@ -1,8 +1,12 @@
 # Security and privacy
 
+> Threats, controls and the checks that test each control, plus the residual risks.
+
 ## Principles
 
 Local first, least privilege, no telemetry, evidence over claims.
+
+{{svg:trust}}
 
 ## Controls and where they are tested
 

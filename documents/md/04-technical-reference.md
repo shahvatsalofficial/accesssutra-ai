@@ -1,5 +1,7 @@
 # Technical reference
 
+> Commands, exit codes, file formats, the report API and the seal algorithm.
+
 ## Commands and exit codes
 
 ```text
@@ -38,6 +40,10 @@ accesssutra demo [--out <dir>]
 ```
 
 Statuses: `passed`, `failed`, `blocked`, `not-run`, `inconclusive`. Check ids: `keyboard-navigation`, `keyboard-trap`, `focus-visibility`, `keyboard-activation`, `form-labels`, `form-errors`, `screen-reader`, `zoom-reflow`, `contrast`, `cognitive`.
+
+## Report anatomy
+
+{{svg:anatomy}}
 
 ## Finding shape (abridged)
 

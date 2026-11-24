@@ -1,10 +1,18 @@
 # Executive summary
 
+> Test accessibility tasks with evidence, not just a scanner: an offline scan, structured human test plans, and sealed reports that say what was and was not tested.
+
 AccessSutra AI is a local-first command-line tool and agent kit that helps teams **test accessibility tasks with evidence**, not just run a scanner. Version {{VERSION}}.
 
 ## The problem
 
 Automated scanners find only a minority of accessibility barriers, and a green scan is routinely misread as "accessible". Teams need cheap, repeatable first-pass checks **and** a disciplined way to record the human testing that scanners cannot do (keyboard journeys, screen readers, zoom, contrast, cognitive clarity).
+
+## At a glance
+
+{{svg:pipeline}}
+
+{{flow:quickstart}}
 
 ## What AccessSutra does
 
@@ -13,6 +21,10 @@ Automated scanners find only a minority of accessibility barriers, and a green s
 - Optionally observes a real browser through Playwright and axe-core (file and loopback URLs only).
 - Produces sealed reports in **JSON, Markdown and HTML**, and a self-assurance **audit report** with the same three formats.
 - Ships 21 agent roles and 26 portable skills for nine AI coding hosts.
+
+## Why a scanner alone is not enough
+
+{{cmp:tools}}
 
 ## Why trust it (and how far)
 
@@ -24,11 +36,13 @@ Automated scanners find only a minority of accessibility barriers, and a green s
 | Fuzzing | {{FUZZ}} hostile inputs, {{FUZZ_UNEXPECTED}} unexpected exceptions |
 | Runtime dependencies | 0 |
 
+{{chart:demo}}
+
 Recorded {{RECORDED}} on Node {{NODE}}, {{PLATFORM}}. All raw artifacts are linked from the documentation index.
 
 ## What it is not
 
-Not a WCAG certification, VPAT, legal opinion, or replacement for testing with disabled users. No independent third-party audit has been performed. See [Legal and governance](10-legal-and-governance).
+Not a WCAG certification, VPAT, legal opinion, or replacement for testing with disabled users. No independent third-party audit has been performed. See [Legal and governance](10-legal-and-governance.md).
 
 ## Who it is for
 

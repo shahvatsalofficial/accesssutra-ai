@@ -1,5 +1,7 @@
 # Legal and governance
 
+> What the project will and will not claim, licensing, privacy and governance. Not legal advice.
+
 ## Not legal advice
 
 AccessSutra AI is software. Its output is not legal advice, a compliance determination, a VPAT or Accessibility Conformance Report, or a WCAG conformance claim under any law or standard (for example ADA, Section 508, EN 301 549, European Accessibility Act). Obligations depend on jurisdiction and facts; consult qualified counsel and accessibility specialists.

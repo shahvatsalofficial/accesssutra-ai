@@ -1,5 +1,7 @@
 # Roadmap and FAQ
 
+> Where the project is going and answers to common questions.
+
 ## Roadmap (not promises)
 
 | Next | Why |

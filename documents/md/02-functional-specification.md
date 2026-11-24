@@ -1,5 +1,7 @@
 # Functional specification
 
+> What AccessSutra AI does, command by command, with the exact behavior of findings and manual checks.
+
 ## Capabilities
 
 | ID | Capability | Behavior | Command |
@@ -16,6 +18,10 @@
 | F10 | Report API | Read-only, loopback, bearer token | `serve` |
 | F11 | IDE install | Copy instructions into `<target>/accesssutra`; dry-run supported | `install-ide` |
 | F12 | Demo | Scan the bundled broken signup fixture and write a full report | `demo` |
+
+## Manual check lifecycle
+
+{{svg:lifecycle}}
 
 ## Finding semantics
 

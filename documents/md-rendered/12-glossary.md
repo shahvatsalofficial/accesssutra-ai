@@ -1,5 +1,7 @@
 # Glossary
 
+> Terms used across the documentation.
+
 | Term | Meaning |
 |---|---|
 | a11y | Numeronym for accessibility |

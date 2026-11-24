@@ -1,5 +1,7 @@
 # User guide
 
+> Install, scan, plan human testing, gate CI and read a report, step by step.
+
 ## 1. Install or run without installing
 
 ```bash
@@ -31,6 +33,10 @@ You get `assessment.html` for people, `assessment.md` for pull requests and `ass
 
 ## 4. Gate CI
 
+{{svg:ci}}
+
+{{cmp:gate}}
+
 ```bash
 accesssutra scan --input dist/index.html --out scan.json --fail-on serious
 ```
@@ -60,6 +66,8 @@ accesssutra verify --report ./assurance/assurance-report.json
 ```
 
 ## 8. Use the agent kit in your IDE
+
+{{svg:agents}}
 
 ```bash
 accesssutra install-ide --target ../my-project --host claude --dry-run
